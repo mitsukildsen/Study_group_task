@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #2193b0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+}
+
+#quiz-container {
+  background-color: rgb(116, 212, 250);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  overflow: hidden;
+  width: 600px;
+  max-width: 100%;
+  display: block;
+  #quiz-header {
+    padding: 4rem;
+  }
+
+  h2 {
+    margin: 0;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+      font-size: 1.3rem;
+      margin: 1rem 0;
+      input {
+        cursor: pointer;
+      }
+      label {
+        cursor: pointer;
+      }
+    }
+  }
+  button {
+    background-color: #304dec;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 1.3rem;
+    button:hover {
+      background-color: #233bc4;
+    }
+  }
+  button:hover {
+    background-color: #233bc4;
+  }
+
+  #results-container {
+    display: none;
+    align-items: center;
+    #results-header {
+      text-align: center;
+      justify-content: center;
+      #results {
+        padding: 2rem 0;
+      }
+    }
+  }
+}
+
+/*====================================================================
+slick
+====================================================================*/
+
+
+.sliderArea {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+.sliderArea.w300 {
+  max-width: 300px;
+}
+.slick-slide {
+  margin: 0 5px;
+}
+.slick-slide img {
+  width: 100%;
+  height: auto;
+}
+.slick-prev, .slick-next {
+  z-index: 1;
+}
+.slick-prev:before, .slick-next:before {
+  color: #000;
+}
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+.slick-active {
+  opacity: 1;
+}
+.slick-current {
+  opacity: 1;
+}
+.thumb {
+  margin: 20px 0 0;
+}
+.thumb .slick-slide {
+  cursor: pointer;
+}
+.thumb .slick-slide:hover {
+  opacity: .7;
+}
