@@ -169,6 +169,9 @@ slick
   .sliderArea {
     max-width: 300px;
   }
+  .sliderArea p {
+    margin-top: 63px;
+  }
   .quiz-container {
     max-width: 480px;
   }
